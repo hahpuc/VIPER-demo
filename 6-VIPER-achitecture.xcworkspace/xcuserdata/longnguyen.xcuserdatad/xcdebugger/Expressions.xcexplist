@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UserViewController.viewDidLoad():UserViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UserViewController.update(with:):UserViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UserViewController.tableView(_:cellForRowAt:):UserViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "users">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static UserRouter.start():Router.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
