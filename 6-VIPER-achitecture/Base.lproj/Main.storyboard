@@ -51,6 +51,36 @@
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="88.392857142857139"/>
         </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="NxI-2w-lE9">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailViewController" id="lx9-qZ-5BZ" customClass="UserDetailViewController" customModule="__VIPER_achitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m90-xK-oH7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCs-p8-XHU">
+                                <rect key="frame" x="171.5" y="430" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ui-nO-3om"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kCs-p8-XHU" firstAttribute="centerX" secondItem="m90-xK-oH7" secondAttribute="centerX" id="VJg-99-PbQ"/>
+                            <constraint firstItem="kCs-p8-XHU" firstAttribute="centerY" secondItem="m90-xK-oH7" secondAttribute="centerY" id="iN2-XD-vZ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="kCs-p8-XHU" id="KIz-Tg-zK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOE-HP-R7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="88"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4h5-mB-94b">
             <objects>

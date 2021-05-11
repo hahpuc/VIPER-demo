@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412EE85B264A610F0041839A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EE85A264A610F0041839A /* UserDetailViewController.swift */; };
+		412EE85F264A652B0041839A /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EE85E264A652B0041839A /* DetailProtocols.swift */; };
+		412EE863264A65390041839A /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EE862264A65390041839A /* DetailRouter.swift */; };
+		412EE866264A65440041839A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412EE865264A65440041839A /* DetailPresenter.swift */; };
 		41C06304264A185B00E3F4E8 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C06303264A185B00E3F4E8 /* Presenter.swift */; };
 		41C06307264A186200E3F4E8 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C06306264A186200E3F4E8 /* Interactor.swift */; };
 		41C0630A264A187700E3F4E8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C06309264A187700E3F4E8 /* Entity.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		412EE85A264A610F0041839A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		412EE85E264A652B0041839A /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		412EE862264A65390041839A /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		412EE865264A65440041839A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		41C06303264A185B00E3F4E8 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		41C06306264A186200E3F4E8 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		41C06309264A187700E3F4E8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -61,6 +69,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		412EE859264A60730041839A /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				412EE85A264A610F0041839A /* UserDetailViewController.swift */,
+				412EE865264A65440041839A /* DetailPresenter.swift */,
+				412EE862264A65390041839A /* DetailRouter.swift */,
+				412EE85E264A652B0041839A /* DetailProtocols.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		41EE72F626491BE100C83909 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				41EE73372649274D00C83909 /* App-Setting */,
-				41EE731D26491DE100C83909 /* Viper */,
+				41EE731D26491DE100C83909 /* UserViewController */,
+				412EE859264A60730041839A /* UserDetail */,
 				41EE730826491BE100C83909 /* Main.storyboard */,
 				41EE730B26491BE200C83909 /* Assets.xcassets */,
 				41EE730D26491BE200C83909 /* LaunchScreen.storyboard */,
@@ -92,7 +112,7 @@
 			path = "6-VIPER-achitecture";
 			sourceTree = "<group>";
 		};
-		41EE731D26491DE100C83909 /* Viper */ = {
+		41EE731D26491DE100C83909 /* UserViewController */ = {
 			isa = PBXGroup;
 			children = (
 				41EE731E26491DED00C83909 /* ViewController.swift */,
@@ -102,7 +122,7 @@
 				41C0630C264A187F00E3F4E8 /* Router.swift */,
 				41C0630F264A18F200E3F4E8 /* Protocols.swift */,
 			);
-			path = Viper;
+			path = UserViewController;
 			sourceTree = "<group>";
 		};
 		41EE73372649274D00C83909 /* App-Setting */ = {
@@ -237,13 +257,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C0630D264A187F00E3F4E8 /* Router.swift in Sources */,
+				412EE863264A65390041839A /* DetailRouter.swift in Sources */,
 				41C06307264A186200E3F4E8 /* Interactor.swift in Sources */,
+				412EE85B264A610F0041839A /* UserDetailViewController.swift in Sources */,
 				41EE731F26491DED00C83909 /* ViewController.swift in Sources */,
 				41C06310264A18F200E3F4E8 /* Protocols.swift in Sources */,
 				41C0630A264A187700E3F4E8 /* Entity.swift in Sources */,
 				41EE730326491BE100C83909 /* AppDelegate.swift in Sources */,
 				41EE730526491BE100C83909 /* SceneDelegate.swift in Sources */,
+				412EE85F264A652B0041839A /* DetailProtocols.swift in Sources */,
 				41C06304264A185B00E3F4E8 /* Presenter.swift in Sources */,
+				412EE866264A65440041839A /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

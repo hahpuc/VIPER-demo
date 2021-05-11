@@ -5,7 +5,7 @@
 //  Created by Long Nguyễn on 11/05/2021.
 //
 
-import Foundation
+import UIKit
 
 class Presenter: PresenterProtocol {
     var view: ViewProtocol?
@@ -20,6 +20,11 @@ class Presenter: PresenterProtocol {
     
     func loadUserList() {
         interactor?.getUserList()
+    }
+    
+    func showUserSelection(with user: User, from view: UIViewController) {
+        print("Select user", user)
+        router?.pushToUserDetail(with: user, from: view)
     }
 }
 

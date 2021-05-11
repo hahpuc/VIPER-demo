@@ -5,7 +5,7 @@
 //  Created by Long Nguyễn on 11/05/2021.
 //
 
-import Foundation
+import UIKit
 
 protocol ViewProtocol {
     // presenter -> view
@@ -21,6 +21,7 @@ protocol PresenterProtocol {
     var router: RouterProtocol? {get set}
     
     func viewDidLoad()
+    func showUserSelection(with user: User, from view: UIViewController)
 }
 
 protocol InputInteractorProtocol {
@@ -39,7 +40,7 @@ protocol OutputInteractorProtocol {
 
 protocol RouterProtocol {
     // presenter -> router
-    
+    func pushToUserDetail(with user: User, from view: UIViewController)
     static func start(userListRef: ViewController)
 }
 

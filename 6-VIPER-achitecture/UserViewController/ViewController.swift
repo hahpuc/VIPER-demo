@@ -33,7 +33,7 @@ class ViewController: UIViewController, ViewProtocol {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Tap on tableView")
+        presenter?.showUserSelection(with: users[indexPath.row], from: self)
     }
 }
 

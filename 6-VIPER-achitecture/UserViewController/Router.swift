@@ -5,11 +5,20 @@
 //  Created by Long Nguyễn on 11/05/2021.
 //
 
-import Foundation
+import UIKit
 
 typealias EntryPoint = PresenterProtocol & OutputInteractorProtocol
 
 class Router: RouterProtocol {
+    
+    func pushToUserDetail(with user: User, from view: UIViewController) {
+        let userDetailViewController = view.storyboard?.instantiateViewController(identifier: "UserDetailViewController") as! UserDetailViewController
+        
+        DetailRouter.startDetail(detailRef: userDetailViewController, user: user)
+        
+        view.navigationController?.pushViewController(userDetailViewController, animated: true)
+    }
+    
     static func start(userListRef: ViewController) {
         let presenter: EntryPoint = Presenter()
         
